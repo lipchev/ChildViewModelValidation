@@ -1,0 +1,15 @@
+<catel:UserControl x:Class="ChildViewModelValidation.ChildView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:catel="http://schemas.catelproject.com"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:local="clr-namespace:ChildViewModelValidation"
+                   mc:Ignorable="d"
+                   d:DataContext="{d:DesignInstance local:ChildViewModel}">
+    <StackPanel Orientation="Horizontal">
+        <TextBlock Text="{Binding UniqueIdentifier}" Margin="5"/>
+        <TextBlock Text="{Binding Item.Guid}" Margin="5"/>
+        <!-- <TextBlock Text="{Binding ParentViewModel.HasErrors}" Margin="5"/> -->
+    </StackPanel>
+</catel:UserControl>
